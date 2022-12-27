@@ -37,4 +37,4 @@ with st.form("my_form", clear_on_submit=True):
 
 
 
-components.html(f'<p  style="white-space: pre-line;word-wrap:break-word;color:white;">{st.session_state["context"][st.session_state["context_length"]:]}</p>', height=300, scrolling=True)
+components.html(f'<p  style="white-space: pre-line;word-wrap:break-word;color:white;">{st.session_state["context"][st.session_state["context_length"]:]}</p>', crolling=True)
