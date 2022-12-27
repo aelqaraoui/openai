@@ -34,4 +34,4 @@ with st.form("my_form", clear_on_submit=True):
         st.session_state['context'] = st.session_state['context'] + "\n\n" + "Q: " + question + "\nA:" + answer
 
 
-components.html(f'<pre style="color:white;">{st.session_state["context"][st.session_state["context_length"]:]}</pre>', height=300, scrolling=True)
+st.text(st.session_state["context"][st.session_state["context_length"]:])
